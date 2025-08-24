@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Deteksi Nyeri & Darurat Persalinan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <img src="ibu-melahirkan.svg" alt="Ilustrasi ibu melahirkan" class="logo" />
+      <div>
+        <h1>Sistem Deteksi Nyeri & Darurat Persalinan</h1>
+        <p class="tagline">Pemantauan nyaman, respons cepat, edukasi menenangkan</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section id="camera-section" class="card">
+      <h2>Monitoring Kamera</h2>
+      <div class="video-wrap">
+        <video id="camera" autoplay playsinline></video>
+        <canvas id="snapshot" style="display:none;"></canvas>
+      </div>
+      <div class="btn-row">
+        <button id="start-camera" class="btn">Mulai Kamera</button>
+        <button id="take-photo" class="btn">Ambil Foto</button>
+        <button id="emergency" class="btn btn-alert">🔔 Panggil Bidan</button>
+      </div>
+      <p class="hint">*Tidak menyimpan data. Hanya untuk analisis lokal di perangkat ini.</p>
+    </section>
+
+    <section id="status" class="card">
+      <h2>Status Pasien</h2>
+      <p class="scale"><strong>Skala Nyeri:</strong> <span id="pain-scale">-</span>/10 <span id="pain-emoji" aria-hidden="true"></span></p>
+      <p class="note" id="pain-note">Belum ada deteksi.</p>
+      <details class="log-wrap">
+        <summary>Log Aktivitas</summary>
+        <ul id="log"></ul>
+      </details>
+    </section>
+
+    <section id="intervensi" class="card hidden" aria-live="polite">
+      <h2>Intervensi Edukasi & Relaksasi</h2>
+      <div class="interv-grid">
+        <div class="block">
+          <h3>Hypnobirthing (Gambar)</h3>
+          <img src="hypnobirthing-poster-placeholder.svg" alt="Ilustrasi hypnobirthing menenangkan" class="media" />
+          <p class="caption">Fokus pada napas, afirmasi positif, dan relaksasi otot.</p>
+        </div>
+        <div class="block">
+          <h3>Video Hypnobirthing</h3>
+          <video id="video-hypno" class="media" controls preload="metadata">
+            <source src="assets/hypnobirthing.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video.
+          </video>
+          <p class="caption">Ganti <code>assets/hypnobirthing.mp4</code> dengan video edukasi Anda.</p>
+        </div>
+        <div class="block">
+          <h3>Musik Klasik Relaksasi</h3>
+          <audio id="musik-klasik" controls preload="none"></audio>
+          <div class="btn-row">
+            <button id="play-music" class="btn">Putar Musik</button>
+            <button id="stop-music" class="btn btn-ghost">Hentikan</button>
+          </div>
+          <p class="caption">Anda dapat memuat file MP3 lokal melalui tombol di bawah.</p>
+          <input type="file" id="music-file" accept="audio/*" class="file" />
+        </div>
+        <div class="block tips">
+          <h3>Teknik Cepat</h3>
+          <ul>
+            <li>Tarik napas 4 detik — tahan 2 detik — hembus 6 detik (ulang 5×).</li>
+            <li>Relaksasi progresif: lemaskan bahu, rahang, dan panggul.</li>
+            <li>Afirmasi: “Tubuhku kuat. Bayiku aman. Aku mampu.”</li>
+            <li>Dukungan: sentuhan hangat, posisi nyaman, kompres hangat.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© 2025 Sistem Monitoring Persalinan | Puskesmas</p>
+  </footer>
+
+  <audio id="alarm" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
