@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1700" viewBox="0 0 2200 1700" style="background:#ffffff; font-family:Arial, Helvetica, sans-serif;">
   <!-- Judul -->
   <text x="600" y="80" text-anchor="middle" font-size="42" font-weight="bold" fill="#1f2a44">
-    HYPNOBIRTHING - RINGKASAN GERAKAN (WHO/ICM/Kemenkes)
+    HYPNOBIRTHING - RINGKASAN GERAKAN
   </text>
   <text x="600" y="120" text-anchor="middle" font-size="22" fill="#444">
     Poster edukasi: posisi nyaman + afirmasi positif
@@ -26,11 +26,11 @@
   <text x="70" y="580" font-size="18" fill="#d97706">Afirmasi: <tspan font-weight="bold">Setiap langkah membawa bayiku semakin dekat dalam pelukanku.</tspan></text>
 
   <!-- Pose 3 -->
-  <rect x="700" y="550" width="700" height="250" rx="18" ry="18" fill="#eaffe6" stroke="#15803d"/>
-  <text x="710" y="520" font-size="24" font-weight="bold">3. Jongkok dengan pegangan kain (Squat Support)</text>
-  <text x="710" y="530" font-size="18">Cara: Pegang kain/sling yang kuat; lakukan posisi jongkok dengan punggung tegak, tarik napas dalam saat kontraksi.</text>
-  <text x="710" y="550" font-size="18">Manfaat: Membuka panggul lebih lebar sehingga memudahkan turunnya kepala bayi.</text>
-  <text x="710" y="580" font-size="18" fill="#15803d">Afirmasi: <tspan font-weight="bold">Tarikan napasku adalah kekuatan; hembusanku adalah kelembutan.</tspan></text>
+  <rect x="580" y="450" width="700" height="250" rx="18" ry="18" fill="#eaffe6" stroke="#15803d"/>
+  <text x="600" y="490" font-size="24" font-weight="bold">3. Jongkok dengan pegangan kain (Squat Support)</text>
+  <text x="600" y="520" font-size="18">Cara: Pegang kain/sling yang kuat; lakukan posisi jongkok dengan punggung tegak, tarik napas dalam saat kontraksi.</text>
+  <text x="600" y="550" font-size="18">Manfaat: Membuka panggul lebih lebar sehingga memudahkan turunnya kepala bayi.</text>
+  <text x="600" y="580" font-size="18" fill="#15803d">Afirmasi: <tspan font-weight="bold">Tarikan napasku adalah kekuatan; hembusanku adalah kelembutan.</tspan></text>
 
   <!-- Pose 4 -->
   <rect x="50" y="730" width="700" height="250" rx="18" ry="18" fill="#f7e8ff" stroke="#7c3aed"/>
